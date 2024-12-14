@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     base: "/paradise-nursery-shopping-cart-app",
     plugins: [react()],
+    build: {
+        assetsInclude: ['**/*.{css,js,jsx,jpg,jpeg,png,svg}'] // Include common asset types
+      }
 })
